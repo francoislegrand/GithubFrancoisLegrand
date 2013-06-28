@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity"
+    android:title="@string/app_name" >
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="25dp"
+        android:layout_y="64dp"
+        android:text="Quantité (cl) : "
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="25dp"
+        android:layout_y="0dp"
+        android:text="Poids : "
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="25dp"
+        android:layout_y="128dp"
+        android:text="Degré  : "
+        android:textSize="20sp" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="17dp"
+        android:layout_y="186dp" >
+
+        <RadioButton
+            android:id="@+id/rbHomme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="36dp"
+            android:layout_y="165dp"
+            android:text="Homme" />
+
+        <RadioButton
+            android:id="@+id/rbFemme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="23dp"
+            android:layout_y="242dp"
+            android:text="Femme" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/bpCalcuer"
+        android:layout_width="142dp"
+        android:layout_height="wrap_content"
+        android:layout_x="0dp"
+        android:layout_y="308dp"
+        android:text="Calculer" />
+
+    <Button
+        android:id="@+id/bpReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="145dp"
+        android:layout_y="308dp"
+        android:text="Reset" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="195dp"
+        android:layout_y="438dp"
+        android:text="by François Legrand"
+        android:textSize="10sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="2dp"
+        android:layout_y="392dp"
+        android:text="Taux d&apos;alcoolémie : "
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="249dp"
+        android:layout_y="387dp"
+        android:text="g / L"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/etPoids"
+        android:layout_width="71dp"
+        android:layout_height="wrap_content"
+        android:layout_x="200dp"
+        android:layout_y="0dp"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+    
+    <EditText
+        android:id="@+id/etQte"
+        android:layout_width="71dp"
+        android:layout_height="wrap_content"
+        android:layout_x="200dp"
+        android:layout_y="54dp"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/etDegre"
+        android:layout_width="71dp"
+        android:layout_height="wrap_content"
+        android:layout_x="200dp"
+        android:layout_y="118dp"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/tvTaux"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="166dp"
+        android:layout_y="385dp"       
+        android:textSize="25sp" />
+
+    <CheckBox
+        android:id="@+id/cbAjeun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="186dp"
+        android:layout_y="219dp"
+        android:text="à jeun" />
+
+    <Button
+        android:id="@+id/bpTaxi"
+        android:layout_width="84dp"
+        android:layout_height="wrap_content"
+        android:layout_x="207dp"
+        android:layout_y="308dp"
+        android:text="Taxi !" />
+
+</AbsoluteLayout>
